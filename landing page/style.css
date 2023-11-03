@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+/* credits UI/UX design @marcelodesignx*/
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
+}
+
+html{
+    background-color: white; 
+    color:black;
+}
+
+body{
+    width:100%;
+    height:100%;
+    min-height: 100vh;
+}
+
+/* header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 10px 30px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 110px;
+}
+header ul li{
+   font-weight: 500;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:black;
+}
+header ul .logo{
+    font-weight: 700;
+    font-size: 40px;
+}
+header ul .bag{
+    font-size: 30px;
+}
+
+/*background heading */
+
+.background-hd{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.background-hd .ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background-hd .ul p{
+    
+    font-weight: 900;
+    font-size: 140px;
+    color: #e3425a;
+    opacity: 0.5;
+}
+.background-hd .ul #dark {
+    opacity: 1;  
+}
+
+/* pizza image */
+
+.pizza{
+    position:absolute;
+    top:210px;
+    right:300px;
+}
+.pizza img{
+    width: 700px;
+}
+
+.fa-star{
+    position: absolute;
+    padding: 15px;
+    background-color: #e4f21c;
+    border-radius: 25px;
+    right:375px;
+    top:330px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap:30px;
+   position: absolute;
+   right: 100px;
+   top:200px;
+}
+.menu .item{
+    background-color: rgba(228, 225, 225, 0.7);
+    padding: 20px 20px 20px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap:10px;
+}
+
+.menu img{
+    width:80px;
+    height:80px;
+    
+}
+.menu  .active{
+    background-color: #e70a2b ;
+}
+.pricing{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left:120px;
+    top:300px;
+    justify-content: space-evenly;
+    gap:20px;
+}
+.pricing #time{
+    word-spacing: 2px;
+    font-weight: 450;
+}
+
+.pricing #time span{
+    color:#e3425a;
+}
+
+.pricing-heading{
+    padding:30px 90px 20px 20px;
+    background-color: rgba(228, 225, 225, 0.7);
+    border-radius: 10px;
+    margin-left: -20px;
+    
+}
+.pricing-heading h4 {
+    font-size: 30px;
+}
+.price {
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 25px;
+    margin-left:-15px;
+    
+}
+.price p{
+    font-weight: 1000;
+    
+}
+.price p span{
+    font-size: 40px;
+}
+.price i{
+    padding:8px 18px 8px 18px;
+    font-size: 15px;
+    background-color: #e3425a;
+    border-radius: 5px;
+    
+}
+
+.price input{
+    width: 40px;
+    text-align: center;
+    color:white;
+    background-color: rgb(42, 40, 40);
+    border: black;
+    outline: none;
+   
+}
+.pricing h3{
+    margin-left: -15px;
+    margin-top: 8px;
+}
+
+.extra{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    gap: 40px;
+    margin-left: -15px;
+}
+.extra .addit{
+    background-color: rgba(228, 225, 225, 0.7);
+    padding: 5px 30px 5px 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 5px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap:10px;
+}
+.extra .addit img{
+    width: 50px;
+    height: 50px;
+}
+
+.pricing .fa-check {
+    position: absolute;
+    top:390px;
+    left:146px;
+    
+    padding:5px;
+    border-radius:20px ;
+    background-color: #e4f21c;
+    
+
+}
+
+
+/* Burger Background heading*/
+
+
+#Burger{
+    text-align: center;
+    margin-top: 50px;
+    color:#e3425a;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: "Rancho",cursive;
+}
+
+.Burger{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.Burger .double-meat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.Burger .double-meat p{
+    
+    font-weight: 900;
+    font-size: 130px;
+    color: #e3425a;
+    opacity: 0.5;
+}
+.Burger .double-meat #dark {
+    opacity: 1;  
+}
+
+/* Burger Menu */
+
+
+.menu1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    position: absolute;
+    right: 80px;
+    
+   
+   
+}
+.menu1 .item{
+    background-color: rgba(228, 225, 225, 0.7);
+    padding: 20px 20px 20px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap:10px;
+}
+
+.menu1 img{
+    width:80px;
+    height:80px;
+    
+}
+.menu1  .active{
+    background-color: #e70a2b ;
+}
+
+/* Burger image */
+
+
+.burger-img{
+    position:absolute;
+    top:1280px;
+    right:210px;
+}
+.burger-img img{
+    width: 600px;
+    height: 500px;
+}
+
+
+/* yellow star */
+
+
+.star2{
+    position: absolute;
+    top:1289px;
+    right: 350px;
+    padding: 15px;
+    background-color: #e4f21c;
+    border-radius: 25px;
+   
+}
+
+/*pricing*/
+
+.pricing1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left:120px;
+    top:1320px;
+    justify-content: space-evenly;
+    gap:20px;
+}
+.pricing1 #time{
+    word-spacing: 2px;
+    font-weight: 450;
+}
+
+.pricing1 #time span{
+    color:#e3425a;
+}
+
+.pricing-heading{
+    padding:30px 90px 20px 20px;
+    background-color: rgba(228, 225, 225, 0.7);
+    border-radius: 10px;
+    margin-left: -20px;
+    
+}
+.pricing-heading h4 {
+    font-size: 30px;
+}
+.price {
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 25px;
+    margin-left:-15px;
+    
+}
+.price p{
+    font-weight: 1000;
+    
+}
+.price p span{
+    font-size: 40px;
+}
+.price i{
+    padding:8px 18px 8px 18px;
+    font-size: 15px;
+    background-color: #e3425a;
+    border-radius: 5px;
+    
+}
+
+.price input{
+    width: 40px;
+    text-align: center;
+    color:white;
+    background-color: rgb(42, 40, 40);
+    border: black;
+    outline: none;
+   
+}
+.pricing1 h3{
+    margin-left: -15px;
+    margin-top: 8px;
+}
+
+.extra{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    gap: 40px;
+    margin-left: -15px;
+}
+.extra .addit{
+    background-color: rgba(228, 225, 225, 0.7);
+    padding: 5px 30px 5px 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 5px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap:10px;
+}
+.extra .addit img{
+    width: 50px;
+    height: 50px;
+}
+
+.pricing1 .fa-check {
+    position: absolute;
+    top:383px;
+    left:146px;
+    
+    padding:5px;
+    border-radius:20px ;
+    background-color: #e4f21c;
+    
+
+}
