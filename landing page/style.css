@@ -5,6 +5,11 @@
 
 /* credits UI/UX design @marcelodesignx*/
 
+:root{
+
+    --primary:#f33d58;
+}
+
 *{
     margin: 0px;
     padding:0px;
@@ -55,50 +60,95 @@ header ul .bag{
     font-size: 30px;
 }
 
-/*background heading */
+/* swiper */
+.swiper {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
 
-.background-hd{
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background:#ad2020;
+  width:15px;
+  height:2px;
+  
+  
+}
+
+.swiper-pagination {
+    bottom: 10px !important;
+  }
+
+.swiper-slide {
+    width: 100%;
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+    background-color: white;
+  }
+
+
+/* pizza  */
+
+.pizza{
     display: flex;
     align-items: center;
     justify-content:center;
+    
 }
 
-.background-hd .ul{
+.pizza .pepperoni{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    transform:translateY(-20px) ;
 }
 
-.background-hd .ul p{
+.pizza .pepperoni p{
     
     font-weight: 900;
     font-size: 140px;
-    color: #e3425a;
-    opacity: 0.5;
+    color:  var(--primary);
+    opacity: 0.4;
+    line-height: 120px;
+    
 }
-.background-hd .ul #dark {
+.pizza .pepperoni #dark {
     opacity: 1;  
 }
 
 /* pizza image */
 
-.pizza{
+.pizza-img{
     position:absolute;
-    top:210px;
-    right:300px;
+    top:42px;
+    right:365px;
 }
-.pizza img{
-    width: 700px;
+.pizza-img img{
+    width: 600px;
 }
+
+
+/* pizza star */
+
 
 .fa-star{
     position: absolute;
     padding: 15px;
     background-color: #e4f21c;
     border-radius: 25px;
-    right:375px;
-    top:330px;
+    right:400px;
+    top:155px;
 }
+
+
+
+/* pizza side menu */
 
 .menu{
     display: flex;
@@ -107,7 +157,7 @@ header ul .bag{
    gap:30px;
    position: absolute;
    right: 100px;
-   top:200px;
+   top:100px;
 }
 .menu .item{
     background-color: rgba(228, 225, 225, 0.7);
@@ -119,25 +169,30 @@ header ul .bag{
     flex-direction: column;
     align-items: center;
     
-    gap:10px;
+    
 }
 
 .menu img{
-    width:80px;
-    height:80px;
+    width:60px;
+    height:60px;
     
 }
 .menu  .active{
-    background-color: #e70a2b ;
+    background-color: var(--primary);
+    filter:drop-shadow(var(--primary) 0px 0px 5px);
+    color:rgb(242, 233, 233);
 }
+
+/* pricing */
+
 .pricing{
     position: absolute;
     display: flex;
     flex-direction: column;
-    left:120px;
-    top:300px;
+    left:200px;
+    top:150px;
     justify-content: space-evenly;
-    gap:20px;
+    gap:5px;
 }
 .pricing #time{
     word-spacing: 2px;
@@ -145,7 +200,7 @@ header ul .bag{
 }
 
 .pricing #time span{
-    color:#e3425a;
+    color: var(--primary);
 }
 
 .pricing-heading{
@@ -157,6 +212,8 @@ header ul .bag{
 }
 .pricing-heading h4 {
     font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 10px;
 }
 .price {
     display: flex;
@@ -176,7 +233,7 @@ header ul .bag{
 .price i{
     padding:8px 18px 8px 18px;
     font-size: 15px;
-    background-color: #e3425a;
+    background-color:  var(--primary);
     border-radius: 5px;
     
 }
@@ -220,30 +277,23 @@ header ul .bag{
     height: 50px;
 }
 
+/* extra item tick*/
+
 .pricing .fa-check {
     position: absolute;
-    top:390px;
+    top:330px;
     left:146px;
-    
     padding:5px;
     border-radius:20px ;
     background-color: #e4f21c;
     
-
 }
 
 
-/* Burger Background heading*/
+/* Burger */
 
 
-#Burger{
-    text-align: center;
-    margin-top: 50px;
-    color:#e3425a;
-    font-size: 70px;
-    font-weight: 600;
-    font-family: "Rancho",cursive;
-}
+
 
 .Burger{
     display: flex;
@@ -255,179 +305,60 @@ header ul .bag{
 .Burger .double-meat{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    transform:translateY(-20px) ;
     
 }
 
 .Burger .double-meat p{
     
     font-weight: 900;
-    font-size: 130px;
-    color: #e3425a;
-    opacity: 0.5;
+    font-size: 140px;
+    color:  var(--primary);
+    opacity: 0.3;
+    line-height: 125px;
 }
 .Burger .double-meat #dark {
     opacity: 1;  
 }
 
-/* Burger Menu */
 
-
-.menu1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:30px;
-    position: absolute;
-    right: 80px;
-    
-   
-   
-}
-.menu1 .item{
-    background-color: rgba(228, 225, 225, 0.7);
-    padding: 20px 20px 20px 20px;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: 800;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    gap:10px;
-}
-
-.menu1 img{
-    width:80px;
-    height:80px;
-    
-}
-.menu1  .active{
-    background-color: #e70a2b ;
-}
 
 /* Burger image */
 
 
 .burger-img{
     position:absolute;
-    top:1280px;
-    right:210px;
+    top:125px;
+    right:230px;
 }
+    
+
 .burger-img img{
-    width: 600px;
+    width: 550px;
     height: 500px;
 }
 
 
-/* yellow star */
+/* Burger star */
 
 
 .star2{
     position: absolute;
-    top:1289px;
+    top:140px;
     right: 350px;
     padding: 15px;
     background-color: #e4f21c;
     border-radius: 25px;
+    
    
 }
 
-/*pricing*/
+/* burger drinks tick */
 
-.pricing1{
+.pricing .check2 {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    left:120px;
-    top:1320px;
-    justify-content: space-evenly;
-    gap:20px;
-}
-.pricing1 #time{
-    word-spacing: 2px;
-    font-weight: 450;
-}
-
-.pricing1 #time span{
-    color:#e3425a;
-}
-
-.pricing-heading{
-    padding:30px 90px 20px 20px;
-    background-color: rgba(228, 225, 225, 0.7);
-    border-radius: 10px;
-    margin-left: -20px;
-    
-}
-.pricing-heading h4 {
-    font-size: 30px;
-}
-.price {
-    display: flex;
-    justify-content:flex-start;
-    align-items:center;
-    gap: 25px;
-    margin-left:-15px;
-    
-}
-.price p{
-    font-weight: 1000;
-    
-}
-.price p span{
-    font-size: 40px;
-}
-.price i{
-    padding:8px 18px 8px 18px;
-    font-size: 15px;
-    background-color: #e3425a;
-    border-radius: 5px;
-    
-}
-
-.price input{
-    width: 40px;
-    text-align: center;
-    color:white;
-    background-color: rgb(42, 40, 40);
-    border: black;
-    outline: none;
-   
-}
-.pricing1 h3{
-    margin-left: -15px;
-    margin-top: 8px;
-}
-
-.extra{
-    display: flex;
-    justify-content:flex-start ;
-    align-items: center;
-    gap: 40px;
-    margin-left: -15px;
-}
-.extra .addit{
-    background-color: rgba(228, 225, 225, 0.7);
-    padding: 5px 30px 5px 10px;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: 800;
-    margin-top: 5px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-    gap:10px;
-}
-.extra .addit img{
-    width: 50px;
-    height: 50px;
-}
-
-.pricing1 .fa-check {
-    position: absolute;
-    top:383px;
+    top:360px;
     left:146px;
     
     padding:5px;
