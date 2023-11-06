@@ -35,7 +35,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 30px 10px 30px;
+    padding: 30px 30px 40px 30px;
 }
 
 header ul{
@@ -223,6 +223,7 @@ header ul .bag{
     margin-left:-15px;
     
 }
+
 .price p{
     font-weight: 1000;
     
@@ -236,6 +237,21 @@ header ul .bag{
     background-color:  var(--primary);
     border-radius: 5px;
     
+}
+
+.price .addition{
+    padding:4px 14px 4px 14px;
+    background-color: rgb(10, 9, 9 ,0.8);
+    color:white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:12px;
+    filter:drop-shadow(rgb(10, 9, 9 ,0.9), 0px,0px,5px);
+}
+.price #plus, #minus{
+    cursor: pointer;
 }
 
 .price input{
@@ -366,4 +382,14 @@ header ul .bag{
     background-color: #e4f21c;
     
 
+}
+
+/* sandwich */
+
+.Burger .cheese p{
+    
+    font-size: 120px;
+    
+   
+    line-height: 125px;
 }
